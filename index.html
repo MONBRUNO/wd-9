@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 빛축제</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="./script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="left">
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt="해운대 빛축제 로고"></a></div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">이용안내</a>
+                    <ul>
+                        <li><a href="#">이용방법</a></li>
+                        <li><a href="#">이용시간</a></li>
+                        <li><a href="#">이용요금</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이벤트정보</a>
+                    <ul>
+                        <li><a href="#">현장이벤트</a></li>
+                        <li><a href="#">온라인이벤트</a></li>
+                        <li><a href="#">이벤트예약</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프로그램</a>
+                    <ul>
+                        <li><a href="#">프로그램안내</a></li>
+                        <li><a href="#">온라인예약</a></li>
+                        <li><a href="#">단체예약상담</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주묻는질문</a></li>
+                        <li><a href="#">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="slider">
+                <div class="slide">
+                    <div><img src="./images/slide1.jpg" alt=""></div>
+                    <div><img src="./images/slide2.jpg" alt=""></div>
+                    <div><img src="./images/slide3.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="tab">
+                    <div class="tab_title">
+                        <h2 class="active">공지사항</h2>
+                        <h2>갤러리</h2>
+                    </div>
+                    <div class="tab_contents">
+                        <ul class="notice">
+                            <li><a href="#">해운대 빛축제 이용안내 해운대 빛축제 이용안내 해운대 빛축제 이용안내</a></li>
+                            <li><a href="#">해운대 빛축제 이용안내</a></li>
+                            <li><a href="#">해운대 빛축제 이용안내 해운대 빛축제 </a></li>
+                            <li><a href="#">해운대 빛축제 이용안내 해운대 빛축제 이용안내 해운대 빛축제 이용안내</a></li>
+                        </ul>
+                        <ul class="gallery">
+                            <li><a href="#"><img src="./images/gallery1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/gallery2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/gallery3.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="banner"><img src="./images/banner.jpg" alt=""></div>
+                <div class="link">
+                    <ul>
+                        <li><a href="#">계정</a></li>
+                        <li><a href="#">계정</a></li>
+                        <li><a href="#">계정</a></li>
+                        <li><a href="#">클라우드</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="f_logo"><img src="./images/logo-footer.png" alt=""></div>
+                <div class="f_info">
+                    <ul class="f_menu">
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">이벤트정보</a></li>
+                        <li><a href="#">프로그램</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <p>2023 © 해운대 빛축제 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal">
+        <h2>타이틀</h2>
+        <p>그들은 발휘하기 하는 노년에게서 그것을 그들의 같은 소담스러운 쓸쓸하랴? 거선의 위하여서 현저하게 천지는 그리하였는가? 같으며, 그들에게 수 오직 과실이 예가 놀이 새가 사막이다. 석가는 인생을 그들의 아니더면, 불러 보배를 그들은 소금이라 아름다우냐? 봄바람을 목숨을 피어나기 실로 불어 바이며, 목숨이 용감하고 교향악이다. 자신과 아니한 생생하며, 불어 영락과 붙잡아 일월과 이상은 봄바람이다. 피어나는 찾아 더운지라 커다란 사는가 위하여서. 봄날의 품었기 것은 없으면 꽃 사막이다. 많이 그와 그들의 때문이다. 몸이 황금시대를 그들은 구하지 우리 것이다. 보는 같은 구하기 가치를 이것이야말로 속에서 그리하였는가?</p>
+        <a href="#" class="close">닫기</a>
+    </div>
+
+    <script>
+        // $('.gnb > li').hover(function(){
+        //     $('.gnb ul').eq($(this).index()).stop().slideDown()
+        // }, function(){
+        //     $('.gnb ul').stop().slideUp()
+        // })
+
+        $('.gnb > li').hover(function(){
+            $(this).find('ul').stop().slideDown()
+        }, function(){
+            $(this).find('ul').stop().slideUp()
+        })
+
+        // setInterval(function(){
+        //     $('.slide').animate({top:-350}, function(){
+        //         $('.slide div:first').appendTo('.slide')
+        //         $('.slide').css('top',0)
+        //     })
+
+        // }, 3000)
+
+        var i = 0
+        $('.slide div').eq(i).show()
+        setInterval(function(){
+            var j = (i + 1) % 3
+            $('.slide div').eq(i).fadeOut()
+            $('.slide div').eq(j).fadeIn()
+            i = j
+        }, 3000)
+
+        $('.tab_title h2').click(function(){
+            $('.tab_title h2').removeClass('active')
+            $(this).addClass('active')
+
+            $('.tab_contents ul').css('display','none')
+            $('.tab_contents ul').eq($(this).index()).css('display','block')
+        })
+
+        $('.notice li:first').click(function(){
+            $('#modal').addClass('active')
+        })
+
+        $('.close').click(function(){
+            $('#modal').removeClass('active')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.wrap {
+    width: 1000px;
+    display: flex;
+}
+
+.left {
+    width: 200px;
+    padding: 0 10px;
+    position: relative;
+}
+
+.logo {
+    padding: 40px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gnb {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.gnb > li > a {
+    display: block;
+    border: 1px solid #666;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.gnb > li:last-child > a {
+    border-bottom: 1px solid #666;
+}
+
+.gnb > li:hover > a {
+    background-color: #222;
+    color: #fff;
+}
+
+.gnb ul {
+    display: none;
+    border: 1px solid #000;
+    /* border-bottom: none; */
+    /* border-top: none; */
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 10px 0;
+}
+
+.gnb ul li:hover a {
+    background-color: #666;
+    color: #fff;
+}
+
+.right {
+    width: 800px;
+}
+
+.slider {
+    height: 350px;
+    width: 800px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.slide {
+    position: relative;
+}
+
+.slide div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contents {
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.contents > div {
+    flex: 1;
+    width: 260px;
+}
+
+.tab_title {
+    display: flex;
+    gap: 4px;
+}
+
+.tab_title h2 {
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.tab_title h2.active {
+    background-color: #afc8ff;
+}
+
+.tab_contents {
+    /* display: none; */
+}
+
+.notice {
+    padding: 5px 0;
+    display: none;
+}
+    
+.notice li a {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 4px;
+    /* display: none; */
+}
+
+.notice li:hover a {
+    text-decoration: underline;
+}
+
+.gallery {
+    /* display: none; */
+    padding: 10px 0;
+}
+
+.gallery li {
+    height: 100px;
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+
+.gallery li:last-child {
+    margin-right: 0;
+}
+
+.gallery li img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    
+}
+
+.banner img {
+    width: 260px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.link ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.link ul li a {
+    display: block;
+    height: 85px;
+    align-items: center;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 0 20px;
+}
+
+.f_logo {
+    width: 130px;
+}
+
+.f_logo img {
+    width: 100%;
+}
+
+.f_info {
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.f_menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.f_menu li a {
+    display: block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.f_menu li:hover a {
+    text-decoration: underline;
+}
+
+.f_menu li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #000;
+    /* background-color: #eee; */
+}
+
+.f_info p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 13px;
+}
+
+#modal {
+    background-color: #fff;
+    height: 380px;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    display: none;
+}
+
+#modal.active {
+    display: block;
+}
+
+#modal h2 {
+    margin-bottom: 10px;
+}
+
+#modal .close {
+    position: absolute;
+    background-color: #ddd;
+    padding: 30px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    bottom: 30px;
+    right: 30px;
+    line-height: 30px;
+}
